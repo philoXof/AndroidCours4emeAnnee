@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--<androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="100dp" />
+-->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#C81B1B"
+        android:src="@drawable/ic_ranking" />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_height="290dp"
+        android:src="@drawable/placeholder" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Petits pois"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cassegrain" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/nutriscore_e" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/barcode"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/quantity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/sale"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/ingredients"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <TextView
+        android:id="@+id/alergenicSubstances"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+    <TextView
+        android:id="@+id/additives"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <!-- <ImageView
+         android:layout_width="wrap_content"
+         android:layout_height="290dp"
+         android:scaleType="fitXY"
+         android:src="@drawable/placeholder"/>
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="start"
+         android:text="Petits pois carottes"
+         android:textStyle="bold"
+         android:textSize="18px"
+         android:contentDescription="petit pois carotte"
+         />
+
+     <ImageView
+         android:layout_width="78px"
+         android:layout_height="42px"
+         android:scaleType="fitXY"
+         android:src="@drawable/nutriscore_e"
+         android:layout_gravity="end"
+         />
+
+     <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:gravity="start"
+         android:text="Cassegrain"
+         android:textSize="15px"
+         android:textStyle="italic"
+         />-->
+
+</LinearLayout>

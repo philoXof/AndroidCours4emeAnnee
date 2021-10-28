@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mon comparateur</string>
+    <string name="product_barcode">Code-barres : %1$s</string>
+    <string name="welcome_message">Bienvenue !</string>
+    <string name="quantity">Quantité: %1$s</string>
+    <string name="sale">Vendu en: %1$s</string>
+    <string name="ingredients">Ingrédients: %1$s</string>
+    <string name="alergenicSubstances">Substances Alergènes: %1$s</string>
+    <string name="additives">Additifs: %1$s</string>
+</resources>
