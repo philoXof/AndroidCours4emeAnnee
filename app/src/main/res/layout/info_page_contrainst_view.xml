@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+<!--    <ImageView-->
+<!--        android:id="@+id/image"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="290dp"-->
+<!--        android:src="@drawable/placeholder"-->
+<!--        app:layout_constraintEnd_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        />-->
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.1" />
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_height="290dp"
+        android:src="@drawable/placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+
+
+            <TextView
+                android:id="@+id/productName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Petits pois"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/image"
+                />
+
+            <TextView
+                android:id="@+id/productBrand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cassegrain"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@+id/productName"/>
+
+        <ImageView
+            android:id="@+id/productNutriscore"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/nutriscore_e"
+            app:layout_constraintTop_toTopOf="@+id/productBrand"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+    <TextView
+        android:id="@+id/sansNom"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/productNutriscore"/>
+    <TextView
+        android:id="@+id/productBarcode"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/sansNom"
+        />
+    <TextView
+        android:id="@+id/productQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/productBarcode"/>
+
+    <TextView
+        android:id="@+id/productSale"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/productQuantity" />
+    <TextView
+        android:id="@+id/productIngredients"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/productSale"/>
+
+    <TextView
+        android:id="@+id/productAlergenicSubstances"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/productIngredients" />
+    <TextView
+        android:id="@+id/productAdditives"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintStart_toStartOf="@+id/guideline"
+        app:layout_constraintTop_toBottomOf="@+id/productAlergenicSubstances" />
+
+<!--    <androidx.constraintlayout.widget.Guideline-->
+<!--        android:id="@+id/guideline"-->
+<!--        android:layout_width="0dp"-->
+<!--        android:layout_height="0dp"-->
+<!--        android:orientation="vertical"-->
+<!--        app:layout_constraintGuide_percent="0.1" />-->
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

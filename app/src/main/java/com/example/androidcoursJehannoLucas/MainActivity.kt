@@ -3,7 +3,6 @@ package com.example.androidcoursJehannoLucas
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.service.autofill.OnClickAction
 import android.text.SpannableStringBuilder
 import android.text.style.StyleSpan
 import android.widget.TextView
@@ -13,7 +12,7 @@ import androidx.core.content.ContextCompat
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.info_page)
+        setContentView(R.layout.info_page_contrainst_view)
 
 
         findViewById<TextView>(R.id.barcode)
