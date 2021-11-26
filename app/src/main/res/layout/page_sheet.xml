@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/purple_200"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <ImageView
+        android:id="@+id/productImage"
+        android:layout_width="wrap_content"
+        android:scaleType="centerCrop"
+        android:layout_height="290dp"
+        android:src="@drawable/placeholder"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/img_food_description" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightTextView"
+        android:textSize="@dimen/TitleSize"
+        android:textStyle="bold"
+        android:text="@string/productName"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/productImage"
+        />
+
+    <TextView
+        android:id="@+id/productBrand"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightTextView"
+        android:text="@string/brand"
+        android:textSize="@dimen/text"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/productName"
+        app:layout_constraintRight_toLeftOf="@+id/productNutriscore"/>
+
+    <ImageView
+        android:id="@+id/productNutriscore"
+        android:layout_width="78dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:src="@drawable/nutriscore_e"
+        app:layout_constraintTop_toTopOf="@+id/productBrand"
+        app:layout_constraintRight_toRightOf="@+id/rightGuideline"
+        android:contentDescription="@string/nutriscore_img_description" />
+
+
+    <TextView
+        android:id="@+id/productBarcode"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightTextView"
+        android:text="@string/productBarcode"
+        android:gravity="center"
+        android:textSize="@dimen/text"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/productNutriscore"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuideline"
+        />
+
+    <TextView
+        android:id="@+id/productQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightTextView"
+        android:text="@string/quantity"
+        android:gravity="center"
+        android:textSize="@dimen/text"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/productBarcode"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuideline"/>
+
+    <TextView
+        android:id="@+id/productSale"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightTextView"
+        android:text="@string/productSale"
+        android:gravity="center"
+        android:textSize="@dimen/text"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/productQuantity"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuideline"/>
+
+    <TextView
+        android:id="@+id/productIngredients"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ingredients"
+        android:textSize="@dimen/text"
+        android:gravity="center"
+        app:layout_constraintStart_toEndOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/productSale"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuideline"/>
+
+    <TextView
+        android:id="@+id/productAlergenicSubstances"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightTextView"
+        android:gravity="center"
+        android:text="@string/alergenicSubstances"
+        android:textSize="@dimen/text"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuideline"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/productIngredients" />
+
+    <TextView
+        android:id="@+id/productAdditives"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightTextView"
+        android:text="@string/additives"
+        android:gravity="center"
+        android:textSize="@dimen/text"
+        app:layout_constraintStart_toStartOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/productAlergenicSubstances"
+        app:layout_constraintEnd_toStartOf="@+id/rightGuideline"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

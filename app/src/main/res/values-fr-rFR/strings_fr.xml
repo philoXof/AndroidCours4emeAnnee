@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Mon comparateur</string>
+    <string name="productName">Petits pois carottes</string>
+    <string name="productBarcode">Code-barres : %1$s</string>
+    <string name="welcomeMessage">Bienvenue !</string>
+    <string name="quantity">Quantité: %1$s</string>
+    <string name="sale">Vendu en: %1$s</string>
+    <string name="ingredients">Ingrédients: %1$s</string>
+    <string name="alergenicSubstances">Substances Alergènes: %1$s</string>
+    <string name="additives">Additifs: %1$s</string>
+</resources>

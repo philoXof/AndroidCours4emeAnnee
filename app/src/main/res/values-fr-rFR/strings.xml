@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="brand">Marque: %1$s</string>
+    <string name="productSale">Sale in: %1$s</string>
+    <string name="Marker">Repères nutritionels pour 100g</string>
+    <string name="img_food_description">du manger</string>
+    <string name="nutriscore_img_description">Nutriscore</string>
+    <string name="fatty_acid">0.1g d\'acides gras saturés en faible quantité</string>
+    <string name="sugar">5.2 g de sucres en quantité modérée</string>
+    <string name="salt">7.2g Sel en quantité modérée</string>
+    <string name="fats">0,9g de matières grasses / Lipidesen faible quantité</string>
+</resources>
