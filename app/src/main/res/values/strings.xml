@@ -1,10 +1,20 @@
 <resources>
     <string name="app_name">OpenFoodFacts</string>
-    <string name="product_barcode">Barcode: %1$s</string>
-    <string name="welcome_message">Welcome !</string>
+    <string name="productName">peas carrots</string>
+    <string name="productBarcode">Barcode: %1$s</string>
+    <string name="welcomeMessage">Welcome !</string>
     <string name="quantity">Quantity: %1$s</string>
     <string name="sale">Sale in: %1$s</string>
     <string name="ingredients">Ingredients: %1$s</string>
     <string name="alergenicSubstances">Alergenic Substances: %1$s</string>
     <string name="additives">Additives: %1$s</string>
+    <string name="brand">Brand: %1$s</string>
+    <string name="nutriscore_img_description">Nutriscore</string>
+    <string name="img_food_description">eating</string>
+    <string name="productSale">Sale in: %1$s</string>
+    <string name="Marker">Nutritional guidelines per 100g</string>
+    <string name="fats">0.9g fat / Low fat</string>
+    <string name="fatty_acid">0.1g of saturated fatty acids in small quantities</string>
+    <string name="sugar">5.2 g of sugars in moderate amounts</string>
+    <string name="salt">7.2g Salt in moderate quantity</string>
 </resources>
