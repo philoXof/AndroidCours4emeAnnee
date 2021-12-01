@@ -35,6 +35,7 @@
         android:id="@+id/fatsPastille"
         android:layout_width="20dp"
         android:layout_height="20dp"
+        android:background="@drawable/pastille"
         app:layout_constraintStart_toEndOf="@id/leftGuideline"
         app:layout_constraintTop_toBottomOf="@id/marker"/>
     <TextView
@@ -51,6 +52,7 @@
         android:id="@+id/fatty_acidPastille"
         android:layout_width="20dp"
         android:layout_height="20dp"
+        android:background="@drawable/pastille"
         app:layout_constraintStart_toEndOf="@id/leftGuideline"
         app:layout_constraintTop_toBottomOf="@id/fats"/>
     <TextView
@@ -66,6 +68,7 @@
         android:id="@+id/sugarPastille"
         android:layout_width="20dp"
         android:layout_height="20dp"
+        android:background="@drawable/pastille"
         app:layout_constraintStart_toEndOf="@id/leftGuideline"
         app:layout_constraintTop_toBottomOf="@id/fatty_acid"/>
     <TextView
@@ -82,6 +85,7 @@
         android:id="@+id/saltPastille"
         android:layout_width="20dp"
         android:layout_height="20dp"
+        android:background="@drawable/pastille"
         app:layout_constraintStart_toEndOf="@id/leftGuideline"
         app:layout_constraintTop_toBottomOf="@id/sugar"/>
     <TextView

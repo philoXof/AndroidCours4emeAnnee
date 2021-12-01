@@ -1,6 +1,5 @@
 package com.example.androidcoursJEHANNO
 
-import android.content.res.ColorStateList
 import android.graphics.Typeface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -10,10 +9,8 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.DrawableCompat
-import com.example.androidcoursJEHANNO.R.color
-import com.example.androidcoursJEHANNO.R.color.nutrient_level_high
+import com.example.androidcoursJEHANNO.R.color.*
 import com.example.androidcoursJEHANNO.R.string
-import com.squareup.picasso.Picasso
 import kotlinx.android.synthetic.main.details_sheet.*
 
 class MainActivity : AppCompatActivity() {
@@ -34,7 +31,17 @@ class MainActivity : AppCompatActivity() {
         //DrawableCompat.setTintList(fatsPastille.background, ColorStateList.valueOf(resources.getColor(color.nutrient_level_low)))
         //DrawableCompat.setTintList(saltPastille.background, nutrient_level_high)
 
-        //page_sheet
+        //page_sheet // false data
+        val calories : NutritionFactsItem = NutritionFactsItem(  "kj","293","")
+        val fats : NutritionFactsItem = NutritionFactsItem("g","0,8","")
+        val fatty_acids : NutritionFactsItem = NutritionFactsItem("g","0,1","")
+        val Carbohydrates : NutritionFactsItem = NutritionFactsItem("g","8,4","")
+        val sugar : NutritionFactsItem = NutritionFactsItem("g","5,2","")
+        val dietary_fiber : NutritionFactsItem = NutritionFactsItem("g","5,2","")
+        val protein : NutritionFactsItem = NutritionFactsItem("g","4,0","")
+        val salt : NutritionFactsItem = NutritionFactsItem("g","0,75","")
+        val sodium : NutritionFactsItem = NutritionFactsItem("g","0,295","")
+        val nutritionFacts : NutritionFacts = NutritionFacts(calories,fats,fatty_acids,Carbohydrates,sugar,dietary_fiber,protein,salt,sodium)
         val product : Product = Product("Petits pois et carottes",
         "Cassegrain",
         "3083680085304",
@@ -44,7 +51,8 @@ class MainActivity : AppCompatActivity() {
             arrayOf("France","Japon","Suisse"),
             arrayOf("Petits poids 66%", "eau","garniture 2,8% (salade, oignons grelot)", "sucre","sel","arôme naturel"),
             arrayOf("Aucune"),
-            arrayOf("Aucun")
+            arrayOf("Aucun"),
+            nutritionFacts
         )
         super.onCreate(savedInstanceState)
         setContentView(R.layout.details_sheet)

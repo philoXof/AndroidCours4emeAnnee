@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        app:layout_constraintGuide_percent="0.05" 
+        />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middleGuideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/black"
+        app:layout_constraintGuide_percent="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/threeQuarterGuideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/black"
+        app:layout_constraintGuide_percent="0.75" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        app:layout_constraintGuide_percent="0.95"/>
+
+
+
+
+    <!--left columns-->
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/emptyCell"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightTextView"
+        android:text=""
+        app:border="right|bottom"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/middleGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+        />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/calories"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/heightTextView"
+        android:text="Calories"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/middleGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/emptyCell" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/fats"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/heightTextView"
+        android:text="Fats"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/middleGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/calories" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/fatty_acid"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/heightTextView"
+        android:text="Fatty acids"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/middleGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/fats" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/carbohydrates"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/heightTextView"
+        android:text="carbohydrates"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/middleGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/fatty_acid" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/sugars"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/heightTextView"
+        android:text="sugars"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/middleGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/carbohydrates" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/dietary_fiber"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/heightTextView"
+        android:text="Dietary fiber"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/middleGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/sugars" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/protein"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/heightTextView"
+        android:text="Protein"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/middleGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/dietary_fiber" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/salt"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/heightTextView"
+        android:text="Salt"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/middleGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/protein" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/sodium"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.45"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/heightTextView"
+        android:text="Sodium"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/middleGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@+id/salt" />
+
+
+    <!--middle-->
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/title100g"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        android:layout_width="0dp"
+        android:gravity="center_vertical"
+        android:layout_height="@dimen/heightTextView"
+        android:text="Pour 100g"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/threeQuarterGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/middleGuideline"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/calories100g"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="100g"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/threeQuarterGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/middleGuideline"
+        app:layout_constraintTop_toBottomOf="@id/title100g" />
+
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/fats100g"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="100g"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/threeQuarterGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/middleGuideline"
+        app:layout_constraintTop_toBottomOf="@id/calories100g" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/fatty_acid100g"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="100g"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/threeQuarterGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/middleGuideline"
+        app:layout_constraintTop_toBottomOf="@id/fats100g" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/carbohydrates100g"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="100g"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/threeQuarterGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/middleGuideline"
+        app:layout_constraintTop_toBottomOf="@id/fatty_acid100g" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/sugars100g"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="100g"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/threeQuarterGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/middleGuideline"
+        app:layout_constraintTop_toBottomOf="@id/carbohydrates100g" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/dietary_fiber100g"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="100g"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/threeQuarterGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/middleGuideline"
+        app:layout_constraintTop_toBottomOf="@id/sugars100g" />
+
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/protein100g"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="100g"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/threeQuarterGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/middleGuideline"
+        app:layout_constraintTop_toBottomOf="@id/dietary_fiber100g" />
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/salt100g"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="100g"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/threeQuarterGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/middleGuideline"
+        app:layout_constraintTop_toBottomOf="@id/protein100g" />
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/sodium100g"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.25"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="100g"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/threeQuarterGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/middleGuideline"
+        app:layout_constraintTop_toBottomOf="@id/salt100g" />
+
+
+<!-- last columns -->
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/title1part"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="par part"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/threeQuarterGuideline"
+        app:layout_constraintTop_toTopOf="parent" />
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/calories1part"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="\?"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/threeQuarterGuideline"
+        app:layout_constraintTop_toBottomOf="@id/title1part" />
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/fats1part"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="\?"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/threeQuarterGuideline"
+        app:layout_constraintTop_toBottomOf="@id/calories1part" />
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/fatty_acid1part"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="\?"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/threeQuarterGuideline"
+        app:layout_constraintTop_toBottomOf="@id/fats1part" />
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/carbohydrates1part"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="\?"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/threeQuarterGuideline"
+        app:layout_constraintTop_toBottomOf="@id/fatty_acid1part" />
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/sugars1part"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="\?"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/threeQuarterGuideline"
+        app:layout_constraintTop_toBottomOf="@id/carbohydrates1part" />
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/dietary_fiber1part"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="\?"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/threeQuarterGuideline"
+        app:layout_constraintTop_toBottomOf="@id/sugars1part" />
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/protein1part"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="\?"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/threeQuarterGuideline"
+        app:layout_constraintTop_toBottomOf="@id/dietary_fiber1part" />
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/salt1part"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="\?"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/threeQuarterGuideline"
+        app:layout_constraintTop_toBottomOf="@id/protein1part" />
+    <com.example.androidcoursJEHANNO.TableCellView
+        android:id="@+id/sodium1part"
+        app:layout_constraintWidth_default="percent"
+        app:layout_constraintWidth_percent="0.2"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/heightTextView"
+        android:text="\?"
+        app:border="right|bottom"
+        app:layout_constraintRight_toLeftOf="@+id/rightGuideline"
+        app:layout_constraintLeft_toRightOf="@+id/threeQuarterGuideline"
+        app:layout_constraintTop_toBottomOf="@id/salt1part" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
