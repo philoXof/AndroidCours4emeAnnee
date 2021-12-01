@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<fragment xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/leftGuideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/white"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/rightGuideline"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:background="@color/purple_200"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+
+    <TextView
+        android:id="@+id/marker"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightTextView"
+        android:text="@string/Marker"
+        android:textSize="@dimen/text"
+        app:layout_constraintLeft_toRightOf="@+id/leftGuideline"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <View
+        android:id="@+id/fatsPastille"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/pastille"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/marker"/>
+    <TextView
+        android:id="@+id/fats"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightTextView"
+        android:text="@string/fats"
+        android:textSize="@dimen/text"
+        app:layout_constraintLeft_toRightOf="@+id/fatsPastille"
+        app:layout_constraintTop_toBottomOf="@id/marker"/>
+
+
+    <View
+        android:id="@+id/fatty_acidPastille"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/pastille"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/fats"/>
+    <TextView
+        android:id="@+id/fatty_acid"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightTextView"
+        android:text="@string/fatty_acid"
+        android:textSize="@dimen/text"
+        app:layout_constraintLeft_toRightOf="@+id/fatty_acidPastille"
+        app:layout_constraintTop_toBottomOf="@id/fats"/>
+
+    <View
+        android:id="@+id/sugarPastille"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/pastille"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/fatty_acid"/>
+    <TextView
+        android:id="@+id/sugar"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightTextView"
+        android:textSize="@dimen/text"
+        android:text="@string/sugar"
+        app:layout_constraintLeft_toRightOf="@+id/sugarPastille"
+        app:layout_constraintTop_toBottomOf="@id/fatty_acid"
+        />
+
+    <View
+        android:id="@+id/saltPastille"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:background="@drawable/pastille"
+        app:layout_constraintStart_toEndOf="@id/leftGuideline"
+        app:layout_constraintTop_toBottomOf="@id/sugar"/>
+    <TextView
+        android:id="@+id/salt"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/heightTextView"
+        android:textSize="@dimen/text"
+        android:text="@string/salt"
+        app:layout_constraintLeft_toRightOf="@+id/saltPastille"
+        app:layout_constraintTop_toBottomOf="@id/sugar"
+        />
+
+
+</fragment>

@@ -11,10 +11,22 @@ import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.DrawableCompat
 import com.example.androidcoursJEHANNO.R.color.*
 import com.example.androidcoursJEHANNO.R.string
+import kotlinx.android.synthetic.main.activity_main.*
 import kotlinx.android.synthetic.main.details_sheet.*
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
+        /*supportFragmentManager
+            .beginTransaction().apply {
+                //add()
+                replace(R.id.container_view1, DemoFragment())
+
+                if (container_view2 != null) {
+                    replace(R.id.container_view2, DemoFragment())
+                }
+
+                commitAllowingStateLoss()
+            }*/
 /*
         supportFragmentManager
             .beginTransaction().apply {
@@ -23,6 +35,18 @@ class MainActivity : AppCompatActivity() {
                 commitAllowingStateLoss()
             }
 */
+
+        /*val binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
+
+        if (savedInstanceState == null) {
+            supportFragmentManager.commit {
+                setReorderingAllowed(true)
+                add<ProductDetailsFragment>(R.id.container_view)
+            }
+        }*/
+
 
         //detail_sheet
         //DrawableCompat.setTintList(saltPastille.background, ColorStateList.valueOf( resources.getColor(color.nutrient_level_high)))

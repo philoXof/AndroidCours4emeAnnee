@@ -34,16 +34,25 @@
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.19384057971014493" />
         <entry key="app/src/main/res/layout/barriereexample.xml" value="0.18931159420289856" />
         <entry key="app/src/main/res/layout/details_fragment.xml" value="0.5911458333333334" />
-        <entry key="app/src/main/res/layout/details_sheet.xml" value="0.5911458333333334" />
+        <entry key="app/src/main/res/layout/details_sheet.xml" value="0.33" />
         <entry key="app/src/main/res/layout/fragment.xml" value="0.5911458333333334" />
+        <entry key="app/src/main/res/layout/fragment_demo.xml" value="0.5" />
         <entry key="app/src/main/res/layout/fragment_details.xml" value="0.5911458333333334" />
+        <entry key="app/src/main/res/layout/home_sheet.xml" value="0.2874873353596758" />
         <entry key="app/src/main/res/layout/info_page.xml" value="0.19384057971014493" />
         <entry key="app/src/main/res/layout/info_page_contrainst_view.xml" value="0.3098958333333333" />
         <entry key="app/src/main/res/layout/list_fragment.xml" value="0.5911458333333334" />
+        <entry key="app/src/main/res/layout/nutritional_information.xml" value="0.5911458333333334" />
         <entry key="app/src/main/res/layout/page_sheet.xml" value="0.5911458333333334" />
-        <entry key="app/src/main/res/layout/table_sheet.xml" value="0.55" />
+        <entry key="app/src/main/res/layout/product_details_fragment.xml" value="0.23385416666666667" />
+        <entry key="app/src/main/res/layout/product_details_nutrition_fragment.xml" value="0.20652173913043478" />
+        <entry key="app/src/main/res/layout/product_details_nutritional_values_fragment.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/product_details_summary_fragment.xml" value="0.23385416666666667" />
+        <entry key="app/src/main/res/layout/product_list_fragment.xml" value="0.6308616261596711" />
+        <entry key="app/src/main/res/layout/table_sheet.xml" value="0.75" />
         <entry key="app/src/main/res/layout/test.xml" value="0.18931159420289856" />
         <entry key="app/src/main/res/layout/test2.xml" value="0.18931159420289856" />
+        <entry key="app/src/main/res/menu/product_details_tabs.xml" value="0.5911458333333334" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.3260416666666667" />
         <entry key="app/src/main/res/xml/attrs.xml" value="0.5911458333333334" />
